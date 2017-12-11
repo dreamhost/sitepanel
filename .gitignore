@@ -1,7 +1,4 @@
 .sass-cache/
 .jekyll-metadata
-framework/node_modules/
-framework/src/css/style.css
-framework/src/js/bundle.js
-docs/_site
+_site
 *.DS_Store

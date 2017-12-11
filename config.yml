@@ -1,0 +1,10 @@
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+baseurl: /sitepanel
+sass:
+  load_paths:
+    - assets/_scss
+    - node_modules
+  style: compressed
