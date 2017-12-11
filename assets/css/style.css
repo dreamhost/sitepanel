@@ -13,6 +13,12 @@ SitePanel CSS
 
 .Table--dashboard .Table__link--active sub { color: #677983; }
 
+.dashboard .Button--primary:hover { border-color: #2BADE9; }
+
+.dashboard .t-caret:after { margin-left: .5rem; color: #AFBFC9; }
+
+.dashboard .t-caret:hover:after, .dashboard .t-caret.is-open:after { color: #2BADE9; }
+
 .old-panel a { color: #677983; }
 
 .old-panel a:hover { color: #434F58; text-decoration: none; }

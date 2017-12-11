@@ -64,6 +64,23 @@ $c-r100: #FFCCCE; //rose
 	}
 }
 
+// Dashboard button tweaks
+.dashboard {
+	.Button--primary:hover {
+		border-color: $c-b300;
+	}
+
+	.t-caret:after {
+		margin-left: .5rem;
+		color: $c-g300;
+	}
+
+	.t-caret:hover:after,
+	.t-caret.is-open:after {
+		color: $c-b300;
+	}
+}
+
 // Dashboard original control panel link (TEMP)
 .old-panel {
 
