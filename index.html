@@ -3,8 +3,72 @@ layout: default
 title: Panel Dashboard
 ---
 
-<div class="container-l m-x-7">
-	<h1>Dashboard</h1>
+<div class="container-l p-x-7">
+	<div class="g-1_2__m">
+		<h1>Dashboard</h1>
+	</div>
+	<div class="l-float-right">
+		<button class="Button Button--primary">New Website</button>
+		<div class="Popover-container on-click">
+			<div class="Popover Popover--max-height Popover--bottom Popover--5 Popover--flush-right">
+				<div class="Popover__wrapper">
+					<div class="Popover__section">
+						<ul class="List List__menu List--50 List--padding">
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Register Domains</p>
+									<p class="List__menu--description">Register one or more domains.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Malware Remover</p>
+									<p class="List__menu--description">Scrubs your website for malware.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Add Hosting</p>
+									<p class="List__menu--description">Shared, VPS, Dedicated, Cloud, etc.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Add Security With SSL</p>
+									<p class="List__menu--description">Protect your website from nasties.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Transfer Domains</p>
+									<p class="List__menu--description">Transfer domains to DreamHost.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Add MySQL</p>
+									<p class="List__menu--description">Need a database? Sure you do.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Install WordPress</p>
+									<p class="List__menu--description">Quick, easy, 1-click WordPress.</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="List__menu--title">Add Remixer</p>
+									<p class="List__menu--description">This won't play your MP3s.</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<button class="Button js-toggle-popover t-caret">Everything Else</button>
+		</div>
+	</div>
 
 	<table class="Table__m Table--dashboard">
 		<thead>
@@ -15,21 +79,28 @@ title: Panel Dashboard
 		<tbody>
 			<tr class="Table__row--parent">
 				<td><a href="#" class="Table__link--active">ebay.com</a></td>
-				<td data-title="Hosting:">DreamPress</td>
+				<td data-title="Hosting:"><a href="#" class="Table__link--active">DreamPress</a></td>
 				<td>
 					<button class="Button Button--compact l-float-right__m">Manage</button>
 				</td>
 			</tr>
 			<tr class="Table__row--child">
-				<td><a href="#" class="Table__link--active"><sub>sub</sub>.ebay.com</a></td>
-				<td data-title="Hosting:">Shared</td>
+				<td><a href="#" class="Table__link--active"><sub>buystuff</sub>.ebay.com</a></td>
+				<td data-title="Hosting:"><a href="#" class="Table__link--active">Shared</a></td>
+				<td>
+					<button class="Button Button--compact l-float-right__m">Manage</button>
+				</td>
+			</tr>
+			<tr class="Table__row">
+				<td><a href="#" class="Table__link--active">google.com</a></td>
+				<td data-title="Hosting:"><a href="#">Add hosting</a></td>
 				<td>
 					<button class="Button Button--compact l-float-right__m">Manage</button>
 				</td>
 			</tr>
 			<tr class="Table__row">
 				<td><a href="#" class="Table__link--active">netflix.com</a></td>
-				<td data-title="Hosting:">VPS Hosting</td>
+				<td data-title="Hosting:"><a href="#" class="Table__link--active">VPS Hosting</a></td>
 				<td>
 					<button class="Button Button--compact l-float-right__m">Manage</button>
 				</td>
