@@ -47,6 +47,9 @@ $c-r500: #4F0703; //rust
 $c-r300: #FF4A48; //coral
 $c-r100: #FFCCCE; //rose
 
+body {
+	min-height: 100%;
+}
 
 // Dashboard table tweaks
 .Table--dashboard {
@@ -91,13 +94,5 @@ $c-r100: #FFCCCE; //rose
 
 // Dashboard original control panel link (TEMP)
 .old-panel {
-
-	a {
-		color: $c-g400;
-
-		&:hover {
-			color: $c-g500;
-			text-decoration: none;
-		}
-	}
+	color: $c-g400;
 }

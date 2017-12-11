@@ -7,6 +7,8 @@ SitePanel CSS
 	styles to DreamHost.css.
 
 */
+body { min-height: 100%; }
+
 .Table--dashboard .Table__link--active { color: #000000; }
 
 .Table--dashboard .Table__link--active:hover, .Table--dashboard .Table__link--active:hover > sub { color: #1176A5; }
@@ -23,6 +25,4 @@ SitePanel CSS
 
 .dashboard-buttons .t-caret:hover:after, .dashboard-buttons .t-caret.is-open:after { color: #2BADE9; }
 
-.old-panel a { color: #677983; }
-
-.old-panel a:hover { color: #434F58; text-decoration: none; }
+.old-panel { color: #677983; }
