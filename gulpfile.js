@@ -1,14 +1,18 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var cleanCSS    = require('gulp-clean-css');
-var sass        = require('gulp-sass');
-var stylelint   = require('gulp-stylelint');
-var prefix      = require('gulp-autoprefixer');
-var rename      = require('gulp-rename');
-var concat      = require('gulp-concat');
-var uglify      = require('gulp-uglify');
-var lintconfig  = require('./stylelint.config.js');
-var package     = require('./package.json');
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
+const cleanCSS    = require('gulp-clean-css');
+const sass        = require('gulp-sass');
+const stylelint   = require('gulp-stylelint');
+const prefix      = require('gulp-autoprefixer');
+const rename      = require('gulp-rename');
+const concat      = require('gulp-concat');
+const uglify      = require('gulp-uglify');
+const lintconfig  = require('./stylelint.config.js');
+const package     = require('./package.json');
+const child       = require('child_process');
+const gutil       = require('gulp-util');
+const siteRoot    = '_site';
+const cssFiles    = '_css/**/*.?(s)css';
 
 /*
 
@@ -20,16 +24,19 @@ var package     = require('./package.json');
 
 */
 
-gulp.task('serve', ['styles'], function() {
+gulp.task('serve', ['styles', 'jekyll'], function() {
 
 		browserSync.init({
-				server: "./",
+				files: [siteRoot + '/**'],
 				port: 7777,
-				open: false
+				open: false,
+				server: {
+					baseDir: siteRoot
+				}
 		});
 
+		gulp.watch(cssFiles, ['styles']);
 		gulp.watch("./assets/_scss/**/*.scss", ['styles']);
-		gulp.watch("./**/*.html").on('change', browserSync.reload);
 });
 
 /*
@@ -64,6 +71,33 @@ gulp.task('styles', ['lint'], function () {
 		.pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 		.pipe(gulp.dest('./assets/css/'))
 		.pipe(browserSync.stream());
+});
+
+/*
+
+	## gulp jekyll
+
+	1. Launch jekyll serve
+	2. Capture output buffer
+	3. Cleanup & logging
+
+*/
+
+gulp.task('jekyll', () => {
+  const jekyll = child.spawn('jekyll', ['build',
+    '--watch',
+    '--incremental',
+	'--drafts'
+  ]);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
 });
 
 /*

@@ -1,7 +1,10 @@
+port: 7776
 markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - gulpfile.js
 baseurl: /sitepanel
 sass:
   load_paths:
