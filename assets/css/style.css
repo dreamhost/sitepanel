@@ -7,3 +7,6 @@ SitePanel CSS
 	styles to DreamHost.css.
 
 */
+.Table--dashboard .Table__link--active { color: #000; }
+
+.Table--dashboard .Table__link--active sub { color: #5E6D78; }
