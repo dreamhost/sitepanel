@@ -20,5 +20,8 @@
     "gulp-stylelint": "^3.7.0",
     "gulp-uglify": "^2.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dreamhost-css": "^0.1.5"
+  }
 }
