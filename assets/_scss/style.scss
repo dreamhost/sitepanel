@@ -65,7 +65,15 @@ $c-r100: #FFCCCE; //rose
 }
 
 // Dashboard button tweaks
-.dashboard {
+.dashboard-buttons {
+	padding: 0 0 3rem;
+	margin-top: -1rem;
+
+	@media (min-width: 1050px) {
+		text-align: right;
+		margin-top: 0;
+	}
+
 	.Button--primary:hover {
 		border-color: $c-b300;
 	}
