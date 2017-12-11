@@ -8,26 +8,26 @@ var rename      = require('gulp-rename');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var lintconfig  = require('./stylelint.config.js');
+var package     = require('./package.json');
 
 /*
 
 	## gulp serve
 
-	1. Run the BrowserSync server at http://localhost:9999
+	1. Run the BrowserSync server at http://localhost:7777
 	2. Compile .scss and inject into browser
 	3. Live-reload .html
 
 */
 
-gulp.task('serve', ['styles', 'js'], function() {
+gulp.task('serve', ['styles'], function() {
 
 		browserSync.init({
 				server: "./",
-				port: 9999,
+				port: 7777,
 				open: false
 		});
 
-		gulp.watch("./assets/js/*.js", ['js']);
 		gulp.watch("./assets/_scss/**/*.scss", ['styles']);
 		gulp.watch("./**/*.html").on('change', browserSync.reload);
 });

@@ -1,4 +1,6 @@
 .sass-cache/
 .jekyll-metadata
-_site
+_site/
+node_modules/*
+!node_modules/dreamhost-css/
 *.DS_Store
