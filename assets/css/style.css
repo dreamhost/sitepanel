@@ -12,3 +12,7 @@ SitePanel CSS
 .Table--dashboard .Table__link--active:hover, .Table--dashboard .Table__link--active:hover > sub { color: #1176A5; }
 
 .Table--dashboard .Table__link--active sub { color: #677983; }
+
+.old-panel a { color: #677983; }
+
+.old-panel a:hover { color: #434F58; text-decoration: none; }

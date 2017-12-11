@@ -63,3 +63,16 @@ $c-r100: #FFCCCE; //rose
 		}
 	}
 }
+
+// Dashboard original control panel link (TEMP)
+.old-panel {
+
+	a {
+		color: $c-g400;
+
+		&:hover {
+			color: $c-g500;
+			text-decoration: none;
+		}
+	}
+}
