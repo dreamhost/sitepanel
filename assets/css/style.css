@@ -25,4 +25,11 @@ body { min-height: 100%; }
 
 .dashboard-buttons .t-caret:hover:after, .dashboard-buttons .t-caret.is-open:after { color: #2BADE9; }
 
+.everything-else.Popover { right: auto; width: 250px; }
+
+.everything-else.Popover li { width: 100%; }
+
+@media (min-width: 1050px) { .everything-else.Popover { right: 0; width: 600px; }
+  .everything-else.Popover li { width: calc(50% - .2rem); } }
+
 .old-panel { color: #677983; }

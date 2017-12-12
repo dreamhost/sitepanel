@@ -92,6 +92,25 @@ body {
 	}
 }
 
+.everything-else.Popover {
+	right: auto;
+
+	width: 250px;
+
+	li {
+		width: 100%;
+	}
+
+	@media (min-width: 1050px) {
+		right: 0;
+		width: 600px;
+
+		li {
+			width: calc(50% - .2rem);
+		}
+	}
+}
+
 // Dashboard original control panel link (TEMP)
 .old-panel {
 	color: $c-g400;
