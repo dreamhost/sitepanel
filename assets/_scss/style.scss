@@ -53,6 +53,11 @@ body {
 
 // Dashboard table tweaks
 .Table--dashboard {
+	.Table__row,
+	.Table__row:last-child {
+		border-color: $c-g200;
+	}
+
 	.Table__link--active {
 		color: $c-black;
 
@@ -90,6 +95,10 @@ body {
 	.t-caret.is-open:after {
 		color: $c-b300;
 	}
+
+	.List__menu--title {
+		font-weight: 600;
+	}
 }
 
 .everything-else.Popover {
@@ -114,4 +123,10 @@ body {
 // Dashboard original control panel link (TEMP)
 .old-panel {
 	color: $c-g400;
+}
+
+// Dashboard toaster tweaks
+.Toaster-container {
+	bottom: 0;
+	top: auto;
 }

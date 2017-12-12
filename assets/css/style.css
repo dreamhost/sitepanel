@@ -9,6 +9,8 @@ SitePanel CSS
 */
 body { min-height: 100%; }
 
+.Table--dashboard .Table__row, .Table--dashboard .Table__row:last-child { border-color: #E0E4E8; }
+
 .Table--dashboard .Table__link--active { color: #000000; }
 
 .Table--dashboard .Table__link--active:hover, .Table--dashboard .Table__link--active:hover > sub { color: #1176A5; }
@@ -25,6 +27,8 @@ body { min-height: 100%; }
 
 .dashboard-buttons .t-caret:hover:after, .dashboard-buttons .t-caret.is-open:after { color: #2BADE9; }
 
+.dashboard-buttons .List__menu--title { font-weight: 600; }
+
 .everything-else.Popover { right: auto; width: 250px; }
 
 .everything-else.Popover li { width: 100%; }
@@ -33,3 +37,5 @@ body { min-height: 100%; }
   .everything-else.Popover li { width: calc(50% - .2rem); } }
 
 .old-panel { color: #677983; }
+
+.Toaster-container { bottom: 0; top: auto; }
