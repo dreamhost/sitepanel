@@ -10,3 +10,5 @@ SitePanel CSS
 .Table--dashboard .Table__link--active { color: #000; }
 
 .Table--dashboard .Table__link--active sub { color: #5E6D78; }
+
+.Card__super { text-transform: uppercase; font-size: .875rem; color: #677983; }
