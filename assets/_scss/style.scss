@@ -25,3 +25,21 @@ SitePanel CSS
 	font-size: .875rem;
 	color: #677983;
 }
+
+//Infographic
+.Infographic__bar{
+	display: block;
+	background:#E0E4E8;
+	height:4px;
+	width: 100%;
+	position: relative;
+
+	span{
+		position: absolute;
+		top:0;
+		left:0;
+		background:#2BADE9;
+		height:4px;
+		width:20%; 
+	}
+}
