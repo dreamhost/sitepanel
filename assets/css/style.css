@@ -23,6 +23,14 @@ body { min-height: 100%; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
 
+.Tabs li { padding: 0; }
+
+.Tabs li.is-active a { color: #071c26; }
+
+.Tabs a { display: block; color: #677983; padding: 0 0 1em 0; }
+
+.Tabs a:hover, .Tabs a:active { color: #071c26; text-decoration: none; }
+
 .PageHeader { padding: 1.75rem 0; }
 
 .PageHeader__container { margin-left: auto; margin-right: auto; max-width: 1280px; display: block; }

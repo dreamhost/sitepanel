@@ -50,3 +50,30 @@ body {
 		flex: 1 0 auto;
 	}
 }
+
+
+
+//Tabs with actual links
+.Tabs{
+
+	li{
+		padding:0;
+	}
+
+	li.is-active a{
+		color:$c-b700;
+	}
+
+	a{
+		display: block;
+		color:$c-g400;
+		padding:0 0 1em 0;
+
+		&:hover,&:active{
+			color:$c-b700;
+			text-decoration: none;
+		}
+	}
+
+	
+}
