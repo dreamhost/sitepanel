@@ -23,6 +23,12 @@ body { min-height: 100%; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
 
+.Tabs__nav-item a { color: #677983; }
+
+.Tabs__nav-item a:hover { text-decoration: none; color: #071c26; }
+
+.Tabs__nav-item.is-active a { color: #071c26; }
+
 .PageHeader { padding: 1.75rem 0; }
 
 .PageHeader__container { margin-left: auto; margin-right: auto; max-width: 1280px; display: block; }
