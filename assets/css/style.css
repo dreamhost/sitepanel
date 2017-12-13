@@ -41,6 +41,8 @@ body { min-height: 100%; }
 
 .Table--dashboard .Table__link--active sub { color: #677983; }
 
+.Table--dashboard .Tag { text-decoration: none; }
+
 .dashboard-buttons { padding: 0 0 3rem; margin-top: -1rem; }
 
 @media (min-width: 1050px) { .dashboard-buttons { text-align: right; margin-top: 0; } }
@@ -82,3 +84,9 @@ body { min-height: 100%; }
     transform: scale(0.98) translateX(100%);
     margin-bottom: 0;
     height: 0; } }
+
+.Card--disabled { cursor: not-allowed; }
+
+.Card--disabled .Card__heading, .Card--disabled .Card__content, .Card--disabled .Button { color: #AFBFC9; }
+
+.Card--disabled .Button:before { display: none; }

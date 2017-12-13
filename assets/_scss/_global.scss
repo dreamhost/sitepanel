@@ -4,6 +4,7 @@ body {
 	min-height: 100%;
 }
 
+// Enable small-bold lists to have text that isn't in anchor tags.
 .List--small-bold > li span {
 	color: $c-g400;
 	font-size: .875rem;
