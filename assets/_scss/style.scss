@@ -8,13 +8,14 @@ SitePanel CSS
 
 */
 
-// Dashboard table tweaks
-.Table--dashboard {
-	.Table__link--active {
-		color: #000;
+// Vars
+@import 'variables';
 
-		& sub {
-			color: #5E6D78;
-		}
-	}
-}
+// Global
+@import 'global';
+
+// Includes
+@import 'includes/header';
+
+// Pages
+@import 'pages/dashboard';

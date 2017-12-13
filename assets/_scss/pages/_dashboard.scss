@@ -1,0 +1,127 @@
+// Dashboard table tweaks
+.Table--dashboard {
+	.Table__row,
+	.Table__row:last-child {
+		border-color: $c-g200;
+	}
+
+	.Table__row .Button,
+	.Table__row--parent .Button,
+	.Table__row--child .Button {
+		font-size: .688rem; // REMOVE ME! Temp fix for framework rem/em bug
+		padding: .65em 1.7em;
+	}
+
+	.Table__link--active {
+		color: $c-black;
+
+		&:hover,
+		&:hover > sub {
+			color: $c-b500;
+		}
+
+		& sub {
+			color: $c-g400;
+		}
+	}
+}
+
+// Dashboard button tweaks
+.dashboard-buttons {
+	padding: 0 0 3rem;
+	margin-top: -1rem;
+
+	@media (min-width: 1050px) {
+		text-align: right;
+		margin-top: 0;
+	}
+
+	.Button--primary:hover {
+		border-color: $c-b300;
+	}
+
+	.t-caret:after {
+		margin-left: .5rem;
+		color: $c-g300;
+	}
+
+	.t-caret:hover:after,
+	.t-caret.is-open:after {
+		color: $c-b300;
+	}
+
+	.List__menu--title {
+		font-weight: 600;
+	}
+}
+
+.everything-else.Popover {
+	right: auto;
+
+	width: 250px;
+
+	li {
+		width: 100%;
+	}
+
+	@media (min-width: 1050px) {
+		right: 0;
+		width: 600px;
+
+		li {
+			width: calc(50% - .2rem);
+		}
+	}
+}
+
+.everything-else + .Button {
+	padding: 1em 2.5em 1em 3em;
+}
+
+// Dashboard original control panel link (TEMP)
+.old-panel {
+	color: $c-g400;
+}
+
+// Dashboard toaster tweaks
+.Toaster-container {
+	bottom: 0;
+	top: auto;
+}
+
+.Toaster__close {
+
+	g {
+		stroke: $c-g300;
+		transition: all .15s ease-in-out;
+	}
+
+	&:hover {
+		background: $c-r300;
+		border-color: $c-r300;
+	}
+
+	&:hover g {
+		stroke: $c-w100;
+	}
+}
+
+.Toaster--is-closing {
+	animation: toaster-close .5s ease-in-out both;
+}
+
+@keyframes toaster-close {
+	0% {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+		margin-bottom: .5em;
+		height: 100%;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(.98) translateX(100%);
+		margin-bottom: 0;
+		height: 0;
+	}
+}
