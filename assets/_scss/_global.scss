@@ -9,3 +9,44 @@ body {
 	font-size: .875rem;
 	padding: auto 1rem;
 }
+
+//Break out this for use in Infographic card types
+.Card__super{
+	text-transform: uppercase;
+	font-size: .875rem;
+	color: $c-g400;
+}
+
+//Infographic placeholder
+.Infographic__bar{
+	display: block;
+	background:#E0E4E8;
+	height:4px;
+	width: 100%;
+	position: relative;
+
+	span{
+		position: absolute;
+		top:0;
+		left:0;
+		background:#2BADE9;
+		height:4px;
+		width:20%; 
+	}
+}
+
+//flexbox cards
+.Card__wrapper{
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin:2em 0 1.5em 0;
+	
+	.Card{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Card__content{
+		flex: 1 0 auto;
+	}
+}
