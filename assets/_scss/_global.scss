@@ -34,3 +34,19 @@ body {
 		width:20%; 
 	}
 }
+
+//flexbox cards
+.Card__wrapper{
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin:2em 0 1.5em 0;
+	
+	.Card{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Card__content{
+		flex: 1 0 auto;
+	}
+}

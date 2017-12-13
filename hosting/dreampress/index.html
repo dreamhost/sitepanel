@@ -14,32 +14,38 @@ title: SitePanel UI 0.2 - Dreampress Hosting
 		<li class="Tabs__nav-item">Security</li>
 	</ul>
 </section>
-<section class="m-bottom-7">
-	<div class="Card g-1_3">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.hosting.svg" class="Card__large-icon" />
-		<label class="Card__super">Hosting</label>
-		<h3 class="Card__heading">Dreampress</h3>
+<section class="Card__wrapper">
+	<div class="Card g-1_3__l">
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.hosting.svg" class="Card__large-icon" />	
+			<label class="Card__super">Hosting</label>
+			<h3 class="Card__heading">Dreampress</h3>
+		</header>
 		<p class="Card__content">This website is fully managed on DreamPress.</p>
-		<a href="#" class="Button Button--primary">Open WP Admin</a>
+		<footer="Card__footer"><a href="#" class="Button Button--primary">Open WP Admin</a></footer>
 	</div>
-	<div class="Card g-1_3">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.billing.svg" class="Card__large-icon" />
-		<label class="Card__super">Billing</label>
-		<h3 class="Card__heading">Recurring</h3>
+	<div class="Card g-1_3__l">
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.billing.svg" class="Card__large-icon" />
+			<label class="Card__super">Billing</label>
+			<h3 class="Card__heading">Recurring</h3>
+		</header>
 		<p class="Card__content">Billing is set to recure <strong>yearly</strong>, and will renew on <strong>01/01/2018</strong></p>
-		<a href="#" class="Button">Manage Billing</a>
+		<footer><a href="#" class="Button">Manage Billing</a></footer>
 	</div>
-	<div class="Card g-1_3">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.billing.svg" class="Card__large-icon" />
-		<label class="Card__super">Support</label>
-		<h3 class="Card__heading">24/7</h3>
+	<div class="Card g-1_3__l">
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.billing.svg" class="Card__large-icon" />	
+			<label class="Card__super">Support</label>
+			<h3 class="Card__heading">24/7</h3>
+		</header>
 		<p class="Card__content">This website has access to our 24/7 award-winning live support.</p>
-		<a href="#" class="Button">Get Support</a>
-</div>
+		<footer><a href="#" class="Button">Get Support</a></footer>
+	</div>
 </section>
 <hr />
 <section class="m-top-10 m-bottom-10 u-clearfix">
-	<div class="g-1_4">
+	<div class="g-1_4__m">
 		<div class="Card m-bottom-0">
 			<h3 class="Card__heading">36GB / 125GB</h3>
 			<div class="Infographic__bar m-bottom-1"><span></span></div>
@@ -47,7 +53,7 @@ title: SitePanel UI 0.2 - Dreampress Hosting
 			<a class="Button Button--text">Resize Server</a>
 		</div>
 	</div><!--grid-->
-	<div class="g-3_4"><div>
+	<div class="g-3_4__m"><div>
 		<div class="w-100__m">
 			<div class="Panel--double w-100">
 				<div class="Panel__section">
@@ -85,13 +91,13 @@ title: SitePanel UI 0.2 - Dreampress Hosting
 </section>
 <hr/>
 <section class="m-bottom-7">
-	<div class="Card g-1_2">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.powercycle.svg" class="Card__Icon" />
+	<div class="Card g-1_2__m">
+		<img src="{{site.baseurl}}/assets/images/icons/icon.restore.svg" class="Card__Icon" />
 		<h3 class="Card__heading">Restore Site</h3>
 		<p class="Card__content">Revert back to an older version of your website files.</p>
 		<a href="#" class="Button Button--text">Restore Site</a>
 	</div>
-	<div class="Card g-1_2">
+	<div class="Card g-1_2__m">
 			<img src="{{site.baseurl}}/assets/images/icons/icon.powercycle.svg" class="Card__Icon" />
 			<h3 class="Card__heading">Powercycle</h3>
 			<p class="Card__content">Stronger than reboot. Force your server to restart.</p>
