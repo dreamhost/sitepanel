@@ -3,3 +3,9 @@
 body {
 	min-height: 100%;
 }
+
+.List--small-bold > li span {
+	color: $c-g400;
+	font-size: .875rem;
+	padding: auto 1rem;
+}
