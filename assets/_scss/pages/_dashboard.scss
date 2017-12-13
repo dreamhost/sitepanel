@@ -67,6 +67,10 @@
 	}
 }
 
+.everything-else + .Button {
+	padding: 1em 2.5em 1em 3em;
+}
+
 // Dashboard original control panel link (TEMP)
 .old-panel {
 	color: $c-g400;
