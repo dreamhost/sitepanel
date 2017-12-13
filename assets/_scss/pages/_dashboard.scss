@@ -77,3 +77,40 @@
 	bottom: 0;
 	top: auto;
 }
+
+.Toaster__close {
+
+	g {
+		stroke: $c-g300;
+		transition: all .15s ease-in-out;
+	}
+
+	&:hover {
+		background: $c-r300;
+		border-color: $c-r300;
+	}
+
+	&:hover g {
+		stroke: $c-w100;
+	}
+}
+
+.Toaster--is-closing {
+	animation: toaster-close .5s ease-in-out both;
+}
+
+@keyframes toaster-close {
+	0% {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+		margin-bottom: .5em;
+		height: 100%;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(.98) translateX(100%);
+		margin-bottom: 0;
+		height: 0;
+	}
+}

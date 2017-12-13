@@ -9,6 +9,14 @@ SitePanel CSS
 */
 body { min-height: 100%; }
 
+.PageHeader { padding: 1.75rem 0; }
+
+.PageHeader__container { margin-left: auto; margin-right: auto; max-width: 1280px; display: block; }
+
+.PageHeader__nav-link { font-weight: 700; }
+
+.PageHeader__subnav > li { margin-right: 1rem; }
+
 .Table--dashboard .Table__row, .Table--dashboard .Table__row:last-child { border-color: #E0E4E8; }
 
 .Table--dashboard .Table__link--active { color: #000000; }
@@ -39,3 +47,20 @@ body { min-height: 100%; }
 .old-panel { color: #677983; }
 
 .Toaster-container { bottom: 0; top: auto; }
+
+.Toaster__close g { stroke: #AFBFC9; transition: all .15s ease-in-out; }
+
+.Toaster__close:hover { background: #FF4A48; border-color: #FF4A48; }
+
+.Toaster__close:hover g { stroke: #ffffff; }
+
+.Toaster--is-closing { animation: toaster-close .5s ease-in-out both; }
+
+@keyframes toaster-close { 0% { opacity: 1;
+    transform: scale(1) translateX(0);
+    margin-bottom: .5em;
+    height: 100%; }
+  100% { opacity: 0;
+    transform: scale(0.98) translateX(100%);
+    margin-bottom: 0;
+    height: 0; } }
