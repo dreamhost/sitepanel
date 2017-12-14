@@ -67,3 +67,16 @@ body {
 		color: $c-b700;
 	}
 }
+
+// Button--text fonts are too small right now to be usable/accessible.
+// This bumps them from 11px to 14px.
+
+.Button--text {
+	font-size: 14px;
+}
+
+// HR should be 1px border, not 2px
+hr {
+	border: 0;
+	border-top: 1px solid $c-g200;
+}
