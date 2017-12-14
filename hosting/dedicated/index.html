@@ -15,7 +15,7 @@ title: SitePanel UI 0.2 - Dedicated Hosting
 		<li class="Tabs__nav-item"><a href="#">Security</a></li>
 	</ul>
 </section>
-<section class="Card__wrapper">
+<section class="Card__wrapper w-100">
 	<div class="Card g-1_3__l">
 		<header class="Card__header">
 			<img src="{{site.baseurl}}/assets/images/icons/icon.hosting.svg" class="Card__large-icon" />	
@@ -87,23 +87,29 @@ title: SitePanel UI 0.2 - Dedicated Hosting
 	</div><!--grid-->
 </section>
 <hr/>
-<section class="m-bottom-7 u-clearfix">
+<section class="Card__wrapper w-100 m-bottom-7 u-clearfix">
 	<div class="Card g-1_3__l">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.reboot.svg" class="Card__Icon" />
-		<h3 class="Card__heading">Reboot</h3>
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.reboot.svg" class="Card__Icon" />
+			<h3 class="Card__heading">Reboot</h3>
+		</header>
 		<p class="Card__content">Reboot your server.</p>
-		<a href="#" class="Button Button--text">Restart Server</a>
+		<footer><a href="#" class="Button Button--text">Restart Server</a></footer>
 	</div>
 	<div class="Card g-1_3__l">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.restore.svg" class="Card__Icon" />
-		<h3 class="Card__heading">Restore Site</h3>
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.restore.svg" class="Card__Icon" />
+			<h3 class="Card__heading">Restore Site</h3>
+		</header>
 		<p class="Card__content">Revert back to an older version of your website files.</p>
-		<a href="#" class="Button Button--text">Restore Server</a>
+		<footer><a href="#" class="Button Button--text">Restore Server</a></footer>
 	</div>
 	<div class="Card g-1_3__l">
-		<img src="{{site.baseurl}}/assets/images/icons/icon.powercycle.svg" class="Card__Icon" />
-		<h3 class="Card__heading">Powercycle</h3>
+		<header class="Card__header">
+			<img src="{{site.baseurl}}/assets/images/icons/icon.powercycle.svg" class="Card__Icon" />
+			<h3 class="Card__heading">Powercycle</h3>
+		</header>
 		<p class="Card__content">Stronger than reboot. Force your server to restart.</p>
-		<a href="#" class="Button Button--text">Force-Restart Server</a>
+		<footer><a href="#" class="Button Button--text">Force-Restart Server</a></footer>
 	</div>
 </section>
