@@ -45,8 +45,6 @@ hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 
 .Table--dashboard .Table__row, .Table--dashboard .Table__row:last-child { border-color: #E0E4E8; }
 
-.Table--dashboard .Table__row .Button, .Table--dashboard .Table__row--parent .Button, .Table--dashboard .Table__row--child .Button { font-size: .688rem; padding: .65em 1.7em; }
-
 .Table--dashboard .Table__link--active { color: #000000; }
 
 .Table--dashboard .Table__link--active:hover, .Table--dashboard .Table__link--active:hover > sub { color: #1176A5; }
@@ -54,6 +52,8 @@ hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 .Table--dashboard .Table__link--active sub { color: #677983; }
 
 .Table--dashboard .Tag { text-decoration: none; }
+
+.Table__row .Button, .Table__row--parent .Button, .Table__row--child .Button { font-size: .688rem; padding: .65em 1.7em; }
 
 .dashboard-buttons { padding: 0 0 3rem; margin-top: -1rem; }
 
