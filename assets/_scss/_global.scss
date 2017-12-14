@@ -4,20 +4,21 @@ body {
 	min-height: 100%;
 }
 
+// Enable small-bold lists to have text that isn't in anchor tags.
 .List--small-bold > li span {
 	color: $c-g400;
 	font-size: .875rem;
 	padding: auto 1rem;
 }
 
-//Break out this for use in Infographic card types
+// Break out this for use in Infographic card types
 .Card__super{
 	text-transform: uppercase;
 	font-size: .875rem;
 	color: $c-g400;
 }
 
-//Infographic placeholder
+// Infographic placeholder
 .Infographic__bar{
 	display: block;
 	background:#E0E4E8;
@@ -31,16 +32,16 @@ body {
 		left:0;
 		background:#2BADE9;
 		height:4px;
-		width:20%; 
+		width:20%;
 	}
 }
 
-//flexbox cards
+// Flexbox cards
 .Card__wrapper{
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin:2em 0 1.5em 0;
-	
+
 	.Card{
 		display: flex;
 		flex-direction: column;
@@ -48,5 +49,21 @@ body {
 
 	.Card__content{
 		flex: 1 0 auto;
+	}
+}
+
+// Make Tabs support anchors
+.Tabs__nav-item {
+	a {
+		color: $c-g400;
+
+		&:hover {
+			text-decoration: none;
+			color: $c-b700;
+		}
+	}
+
+	&.is-active a {
+		color: $c-b700;
 	}
 }
