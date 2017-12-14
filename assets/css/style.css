@@ -77,11 +77,8 @@ hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 
 .Table--dashboard .Tag { text-decoration: none; }
 
-<<<<<<< Updated upstream
 .Table__row .Button, .Table__row--parent .Button, .Table__row--child .Button { font-size: .688rem; padding: .65em 1.7em; }
 
-=======
->>>>>>> Stashed changes
 .dashboard-buttons { padding: 0 0 3rem; margin-top: -1rem; }
 
 @media (min-width: 1050px) { .dashboard-buttons { text-align: right; margin-top: 0; } }
