@@ -103,7 +103,9 @@ title: Dashboard
 			<td>
 				<a href="{{site.baseurl}}/domain/expiring/" class="Table__link--active">ebay.com</a>
 			</td>
-			<td data-title="Hosting:"><a href="{{site.baseurl}}/hosting/dreampress/" class="Table__link--active">DreamPress</a></td>
+			<td data-title="Hosting:">
+				<a href="{{site.baseurl}}/hosting/dreampress/" class="Table__link--active">DreamPress</a>
+			</td>
 			<td>
 				<a href="{{site.baseurl}}/hosting/dreampress/" class="Button Button--compact l-float-right__m">Manage</a>
 			</td>
@@ -112,7 +114,20 @@ title: Dashboard
 			<td>
 				<a href="{{site.baseurl}}/domain/hosted/" class="Table__link--active"><sub>buystuff</sub>.ebay.com</a>
 			</td>
-			<td data-title="Hosting:"><a href="{{site.baseurl}}/hosting/shared/" class="Table__link--active">Shared</a></td>
+			<td data-title="Hosting:">
+				<a href="{{site.baseurl}}/hosting/shared/" class="Table__link--active">Shared</a>
+				<div class="Popover-container on-hover">
+					<div class="Popover Popover--dark Popover--1 has-caret">
+						<div class="Popover__wrapper">
+							<div class="p-1">
+								WordPress 4.8.1 is available.<br />
+								Click to update.
+							</div>
+						</div>
+					</div>
+					<a href="javascript:void(0)" class="Tag Tag--yellow m-left-1 t-bold t-1">Update Available</a>
+				</div>
+			</td>
 			<td>
 				<a href="{{site.baseurl}}/hosting/shared/" class="Button Button--compact l-float-right__m">Manage</a>
 			</td>
@@ -155,17 +170,6 @@ title: Dashboard
 			<td><a href="{{site.baseurl}}/domain/hosted/" class="Table__link--active">godaddy.com</a></td>
 			<td data-title="Hosting:">
 				<a href="{{site.baseurl}}/hosting/remixer/" class="Table__link--active">Remixer</a>
-				<div class="Popover-container on-hover">
-					<div class="Popover Popover--dark Popover--1 has-caret">
-						<div class="Popover__wrapper">
-							<div class="p-1">
-								This website is currently offline.<br />
-								Click to view details.
-							</div>
-						</div>
-					</div>
-					<a href="javascript:void(0)" class="Tag Tag--red m-left-1 t-bold t-1">OFFLINE</a>
-				</div>
 			</td>
 			<td>
 				<a href="{{site.baseurl}}/hosting/remixer/" class="Button Button--compact l-float-right__m">Manage</a>
