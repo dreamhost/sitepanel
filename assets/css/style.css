@@ -31,7 +31,7 @@ body { min-height: 100%; }
 
 .Infographic__radial .Infographic__radial-inner { position: relative; border-radius: 500px; height: 110px; width: 110px; background: #2BADE9; clip-path: polygon(100% 0%, 50% 50%, 50% 100%, 0 100%, 0 0); }
 
-.Infographic__radial span { background: #ffffff; height: 100px; width: 100px; display: block; border-radius: 500px; position: absolute; top: 50%; left: 50%; margin: -50px 0 0 -50px; }
+.Infographic__radial span { background: #ffffff; height: 100px; width: 100px; display: block; border-radius: 500px; position: absolute; top: 50%; left: 50%; margin: -50px 0 0 -50px; width: 20%; }
 
 .Card__wrapper { display: inline-flex; flex-wrap: wrap; margin: 2em 0 1.5em 0; }
 
@@ -39,15 +39,9 @@ body { min-height: 100%; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
 
-.Tabs li { padding: 0; }
+.Tabs__nav-item { padding: 0; }
 
-.Tabs li.is-active a { color: #071c26; }
-
-.Tabs a { display: block; color: #677983; padding: 0 0 1em 0; }
-
-.Tabs a:hover, .Tabs a:active { color: #071c26; text-decoration: none; }
-
-.Tabs__nav-item a { color: #677983; }
+.Tabs__nav-item a { display: block; color: #677983; padding: 0 0 1em 0; }
 
 .Tabs__nav-item a:hover { text-decoration: none; color: #071c26; }
 
