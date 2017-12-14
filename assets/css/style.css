@@ -9,6 +9,10 @@ SitePanel CSS
 */
 body { min-height: 100%; }
 
+.PageHeader__notification-amount { color: #ffffff; }
+
+.PageHeader__subnav a { text-decoration: none; }
+
 .List--small-bold > li span { color: #677983; font-size: .875rem; padding: auto 1rem; }
 
 .Card__super { text-transform: uppercase; font-size: .875rem; color: #677983; }
@@ -23,11 +27,32 @@ body { min-height: 100%; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
 
+.Card { background: #F4F6F9; width: 100%; }
+
+@media (min-width: 750px) { .Card { background: none; }
+  .Card.g-1_3, .Card.g-1_3__m, .Card.g-1_3__l { width: 31.76157%; }
+  .Card.g-1_2, .Card.g-1_2__m, .Card.g-1_2__l { width: 48.82117%; } }
+
 .Tabs__nav-item a { color: #677983; }
 
 .Tabs__nav-item a:hover { text-decoration: none; color: #071c26; }
 
 .Tabs__nav-item.is-active a { color: #071c26; }
+
+.Tabs { overflow: scroll; cursor: e-resize; }
+
+.Tabs ul { border-bottom: 1px solid #E0E4E8; min-width: 450px; }
+
+.Tabs:after { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #F4F6F9; display: block; position: absolute; content: ''; top: 14.6rem; color: #AFBFC9; right: 2rem; }
+
+.Tabs:hover:after { border-left: 10px solid #E0E4E8; }
+
+@media (min-width: 500px) { .Tabs { overflow-y: auto; cursor: default; }
+  .Tabs:before, .Tabs:after { display: none; } }
+
+.Button--text { font-size: 14px; }
+
+hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 
 .PageHeader { padding: 1.75rem 0; }
 
@@ -37,9 +62,12 @@ body { min-height: 100%; }
 
 .PageHeader__subnav > li { margin-right: 1rem; }
 
-.Table--dashboard .Table__row, .Table--dashboard .Table__row:last-child { border-color: #E0E4E8; }
+@media (min-width: 750px) { .Tabs--left { max-width: 200px; margin-top: 2rem; }
+  .Tabs--left ul { border: 0; }
+  .Tabs--left .Tabs__nav-item { display: block; margin: 0; font-size: 16px; }
+  .Tabs--left .Tabs__nav-item:after { display: none; } }
 
-.Table--dashboard .Table__row .Button, .Table--dashboard .Table__row--parent .Button, .Table--dashboard .Table__row--child .Button { font-size: .688rem; padding: .65em 1.7em; }
+.Table--dashboard .Table__row, .Table--dashboard .Table__row:last-child { border-color: #E0E4E8; }
 
 .Table--dashboard .Table__link--active { color: #000000; }
 
@@ -48,6 +76,8 @@ body { min-height: 100%; }
 .Table--dashboard .Table__link--active sub { color: #677983; }
 
 .Table--dashboard .Tag { text-decoration: none; }
+
+.Table__row .Button, .Table__row--parent .Button, .Table__row--child .Button { font-size: .688rem; padding: .65em 1.7em; }
 
 .dashboard-buttons { padding: 0 0 3rem; margin-top: -1rem; }
 
