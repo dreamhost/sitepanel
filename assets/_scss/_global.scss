@@ -52,17 +52,26 @@ body {
 .Infographic__radial-wrapper{
 	position: relative;
 	padding: 0 0 0 2rem;
+	height:200px;
 }
 
 .Infographic__radial-content{
-	margin:80px 0 1em 65px;
+	margin:4rem 0 1em 4em;
 	padding:0;
+	position: absolute;
+	top:0;
+	left:0;
 	background: transparent;
+
+
+	.Button{
+		margin:0 0 0 -3em;
+	}
 }
 
 .Infographic__radial{
 	position: absolute;
-	top:25%;
+	top:2rem;
 	left:2rem;
 
 	.Infographic__radial-inner{

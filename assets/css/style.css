@@ -21,11 +21,13 @@ body { min-height: 100%; }
 
 .Infographic__core span:first-child, .Infographic__core span:nth-child(2) { background: #2BADE9; }
 
-.Infographic__radial-wrapper { position: relative; padding: 0 0 0 2rem; }
+.Infographic__radial-wrapper { position: relative; padding: 0 0 0 2rem; height: 200px; }
 
-.Infographic__radial-content { margin: 80px 0 1em 65px; padding: 0; background: transparent; }
+.Infographic__radial-content { margin: 4rem 0 1em 4em; padding: 0; position: absolute; top: 0; left: 0; background: transparent; }
 
-.Infographic__radial { position: absolute; top: 25%; left: 2rem; }
+.Infographic__radial-content .Button { margin: 0 0 0 -3em; }
+
+.Infographic__radial { position: absolute; top: 2rem; left: 2rem; }
 
 .Infographic__radial .Infographic__radial-inner { position: relative; border-radius: 500px; height: 110px; width: 110px; background: #2BADE9; clip-path: polygon(100% 0%, 50% 50%, 50% 100%, 0 100%, 0 0); }
 
