@@ -29,9 +29,11 @@ body { min-height: 100%; }
 
 .Tabs__nav-item.is-active a { color: #071c26; }
 
+.Tabs ul { border-bottom: 1px solid #E0E4E8; }
+
 .Button--text { font-size: 14px; }
 
-hr { border: 0; border-top: 1px solid #E0E4E8; }
+hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 
 .PageHeader { padding: 1.75rem 0; }
 

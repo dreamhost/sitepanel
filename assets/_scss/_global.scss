@@ -68,6 +68,11 @@ body {
 	}
 }
 
+// Tabs hr should match global hr
+.Tabs ul {
+	border-bottom: 1px solid $c-g200;
+}
+
 // Button--text fonts are too small right now to be usable/accessible.
 // This bumps them from 11px to 14px.
 
@@ -78,5 +83,5 @@ body {
 // HR should be 1px border, not 2px
 hr {
 	border: 0;
-	border-top: 1px solid $c-g200;
+	border-bottom: 1px solid $c-g200;
 }
