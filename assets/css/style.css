@@ -43,7 +43,7 @@ body { min-height: 100%; }
 
 .Tabs ul { border-bottom: 1px solid #E0E4E8; min-width: 450px; }
 
-.Tabs:after { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #F4F6F9; display: block; position: absolute; content: ''; z-index: 99999; top: 14.6rem; color: #AFBFC9; right: 2rem; }
+.Tabs:after { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #F4F6F9; display: block; position: absolute; content: ''; top: 14.6rem; color: #AFBFC9; right: 2rem; }
 
 .Tabs:hover:after { border-left: 10px solid #E0E4E8; }
 
