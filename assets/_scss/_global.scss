@@ -31,7 +31,7 @@ body {
 // Infographic placeholder
 .Infographic__bar{
 	display: block;
-	background:#E0E4E8;
+	background:$c-g100;
 	height:4px;
 	width: 100%;
 	position: relative;
@@ -40,8 +40,70 @@ body {
 		position: absolute;
 		top:0;
 		left:0;
-		background:#2BADE9;
+		background:$c-b300;
 		height:4px;
+		width:100%; 
+	}
+}
+
+.Infographic__core{
+	span{
+		display: inline-block;
+		margin:0 1% 0 0;
+		background:$c-g200;
+		height:4px;
+		width:24%; 
+
+		&:first-child, &:nth-child(2){
+			background:$c-b300;
+		}
+	}
+}
+
+.Infographic__radial-wrapper{
+	position: relative;
+	padding: 0 0 0 2rem;
+	height:200px;
+}
+
+.Infographic__radial-content{
+	margin:4rem 0 1em 4em;
+	padding:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background: transparent;
+
+
+	.Button{
+		margin:0 0 0 -3em;
+	}
+}
+
+.Infographic__radial{
+	position: absolute;
+	top:2rem;
+	left:2rem;
+
+	.Infographic__radial-inner{
+	position: relative;
+	border-radius:500px;
+	height:110px;
+	width:110px;
+	background:$c-b300;
+	clip-path: polygon(100% 0%, 50% 50%, 50% 100%, 0 100%, 0 0);
+	}
+
+	span{
+		background:$c-w100;
+		height:100px;
+		width:100px;
+		display: block;
+		border-radius:500px;
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin:-50px 0 0 -50px;
 		width:20%;
 	}
 }
@@ -86,8 +148,12 @@ body {
 
 // Make Tabs support anchors
 .Tabs__nav-item {
+	padding:0;
+
 	a {
+		display: block;
 		color: $c-g400;
+		padding:0 0 1em 0;
 
 		&:hover {
 			text-decoration: none;

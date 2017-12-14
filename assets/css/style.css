@@ -17,15 +17,35 @@ body { min-height: 100%; }
 
 .Card__super { text-transform: uppercase; font-size: .875rem; color: #677983; }
 
-.Infographic__bar { display: block; background: #E0E4E8; height: 4px; width: 100%; position: relative; }
+.Infographic__bar { display: block; background: #F4F6F9; height: 4px; width: 100%; position: relative; }
 
-.Infographic__bar span { position: absolute; top: 0; left: 0; background: #2BADE9; height: 4px; width: 20%; }
+.Infographic__bar span { position: absolute; top: 0; left: 0; background: #2BADE9; height: 4px; width: 100%; }
+
+.Infographic__core span { display: inline-block; margin: 0 1% 0 0; background: #E0E4E8; height: 4px; width: 24%; }
+
+.Infographic__core span:first-child, .Infographic__core span:nth-child(2) { background: #2BADE9; }
+
+.Infographic__radial-wrapper { position: relative; padding: 0 0 0 2rem; height: 200px; }
+
+.Infographic__radial-content { margin: 4rem 0 1em 4em; padding: 0; position: absolute; top: 0; left: 0; background: transparent; }
+
+.Infographic__radial-content .Button { margin: 0 0 0 -3em; }
+
+.Infographic__radial { position: absolute; top: 2rem; left: 2rem; }
+
+.Infographic__radial .Infographic__radial-inner { position: relative; border-radius: 500px; height: 110px; width: 110px; background: #2BADE9; clip-path: polygon(100% 0%, 50% 50%, 50% 100%, 0 100%, 0 0); }
+
+.Infographic__radial span { background: #ffffff; height: 100px; width: 100px; display: block; border-radius: 500px; position: absolute; top: 50%; left: 50%; margin: -50px 0 0 -50px; width: 20%; }
 
 .Card__wrapper { display: inline-flex; flex-wrap: wrap; margin: 2em 0 1.5em 0; }
 
 .Card__wrapper .Card { display: flex; flex-direction: column; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
+
+.Tabs__nav-item { padding: 0; }
+
+.Tabs__nav-item a { display: block; color: #677983; padding: 0 0 1em 0; }
 
 .Card { background: #F4F6F9; width: 100%; }
 
