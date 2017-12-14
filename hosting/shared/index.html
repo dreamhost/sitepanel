@@ -1,16 +1,16 @@
 ---
 layout: default
-title: SitePanel UI 0.2 - Shared Hosting
+title: Shared Hosting
 ---
 
-<h1>buystuff.ebay.com</h1>
+<h2>buystuff.ebay.com</h2>
 
 <section class="Tabs">
 	<ul>
 		<li class="Tabs__nav-item is-active"><a href="#">Hosting</a></li>
-		<li class="Tabs__nav-item"><a href="/domain/hosted/">Domain</a></li>
+		<li class="Tabs__nav-item"><a href="{{site.baseurl}}/domain/hosted/">Domain</a></li>
 		<li class="Tabs__nav-item"><a href="#">Email</a></li>
-		<li class="Tabs__nav-item"><a href="#">Wordpress</a></li>
+		<li class="Tabs__nav-item"><a href="{{site.baseurl}}/wordpress/active/">WordPress</a></li>
 		<li class="Tabs__nav-item"><a href="#">Security</a></li>
 	</ul>
 </section>
@@ -30,7 +30,7 @@ title: SitePanel UI 0.2 - Shared Hosting
 			<label class="Card__super">Billing</label>
 			<h3 class="Card__heading">Recurring</h3>
 		</header>
-		<p class="Card__content">Billing is set to recure <strong>yearly</strong>, and will renew on <strong>01/01/2018</strong></p>
+		<p class="Card__content">Billing is set to recur <strong>yearly</strong>, and will renew on <strong>01/01/2018</strong></p>
 		<footer><a href="#" class="Button">Manage Billing</a></footer>
 	</div>
 	<div class="Card g-1_3__l">
@@ -45,7 +45,7 @@ title: SitePanel UI 0.2 - Shared Hosting
 </section>
 <hr />
 <section class="m-top-10 m-bottom-10 u-clearfix">
-	<div class="g-1_2__m">
+	<div class="g-1_2__m m-bottom-4">
 		<div class="Card g-1_2">
 			<img class="w-75" src="{{site.baseurl}}/assets/images/icons/icon.unlimited.svg" alt="Unlimited"/>
 			<br />
@@ -89,7 +89,7 @@ title: SitePanel UI 0.2 - Shared Hosting
 		<p class="Card__content">Revert back to an older version of your website files.</p>
 		<footer><a href="#" class="Button Button--text">Restore Site</a></footer>
 	</div>
-	<div class="Card g-1_2">
+	<div class="Card g-1_2__m">
 			<header class="Card__header">
 		<img src="{{site.baseurl}}/assets/images/icons/icon.powercycle.svg" class="Card__Icon" />
 			<h3 class="Card__heading">Powercycle</h3>
