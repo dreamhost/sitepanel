@@ -20,7 +20,7 @@ body {
 //Infographic placeholder
 .Infographic__bar{
 	display: block;
-	background:#E0E4E8;
+	background:$c-g100;
 	height:4px;
 	width: 100%;
 	position: relative;
@@ -29,9 +29,61 @@ body {
 		position: absolute;
 		top:0;
 		left:0;
-		background:#2BADE9;
+		background:$c-b300;
 		height:4px;
-		width:20%; 
+		width:100%; 
+	}
+}
+
+.Infographic__core{
+	span{
+		display: inline-block;
+		margin:0 1% 0 0;
+		background:$c-g200;
+		height:4px;
+		width:24%; 
+
+		&:first-child, &:nth-child(2){
+			background:$c-b300;
+		}
+	}
+}
+
+.Infographic__radial-wrapper{
+	position: relative;
+	padding: 0 0 0 2rem;
+}
+
+.Infographic__radial-content{
+	margin:80px 0 1em 65px;
+	padding:0;
+	background: transparent;
+}
+
+.Infographic__radial{
+	position: absolute;
+	top:25%;
+	left:2rem;
+
+	.Infographic__radial-inner{
+	position: relative;
+	border-radius:500px;
+	height:110px;
+	width:110px;
+	background:$c-b300;
+	clip-path: polygon(100% 0%, 50% 50%, 50% 100%, 0 100%, 0 0);
+	}
+
+	span{
+		background:$c-w100;
+		height:100px;
+		width:100px;
+		display: block;
+		border-radius:500px;
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin:-50px 0 0 -50px;
 	}
 }
 
@@ -50,8 +102,6 @@ body {
 		flex: 1 0 auto;
 	}
 }
-
-
 
 //Tabs with actual links
 .Tabs{
