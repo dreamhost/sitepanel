@@ -1,8 +1,8 @@
 <div class="PageHeader PageHeader--responsive-m m-bottom-10">
 	<div class="PageHeader__container p-x-7">
-		<a class="PageHeader__logo" href="./"></a>
+		<a class="PageHeader__logo" href="{{site.baseurl}}/"></a>
 		<ul class="PageHeader__nav PageHeader__only-show-large">
-			<li><a class="PageHeader__nav-link{% if page.title == 'Dashboard' %} is-active{% endif %}" href="/">Dashboard</a></li>
+			<li><a class="PageHeader__nav-link{% if page.title == 'Dashboard' %} is-active{% endif %}" href="{{site.baseurl}}/">Dashboard</a></li>
 			<li><a class="PageHeader__nav-link{% if page.title == 'Billing' %} is-active{% endif %}" href="#">Billing</a></li>
 			<li class="Popover-container on-click">
 				<button class="PageHeader__nav-link t-caret js-toggle-popover Button--unset">Support</button>

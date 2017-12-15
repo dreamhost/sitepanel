@@ -169,7 +169,7 @@ body {
 // Tabs hr should match global hr
 // Also make tabs scroll on overflow
 .Tabs {
-	overflow: scroll;
+	overflow-y: hidden;
 	cursor: e-resize;
 
 	ul {
