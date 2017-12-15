@@ -1,0 +1,156 @@
+---
+layout: default
+title: Security Settings - Shared
+---
+
+<h2>BUYSTUFF.EBAY.COM</h2>
+
+<section class="Tabs m-bottom-12">
+	<ul>
+		<li class="Tabs__nav-item"><a href="{{site.baseurl}}/hosting/shared/">Hosting</a></li>
+		<li class="Tabs__nav-item"><a href="{{site.baseurl}}/domain/hosted/">Domain</a></li>
+		<li class="Tabs__nav-item"><a href="#">Email</a></li>
+		<li class="Tabs__nav-item"><a href="{{site.baseurl}}/wordpress/active/">Wordpress</a></li>
+		<li class="Tabs__nav-item is-active"><a href="{{site.baseurl}}/security/shared/">Security</a></li>
+	</ul>
+</section>
+
+<h3><img src="{{site.baseurl}}/assets/images/icons/icon.security.svg" class="l-inline m-bottom-0 m-right-2 u-vertical-align-middle" alt="Security Settings" />Security Settings</h3>
+<ul class="List__settings m-top-5 m-bottom-12">
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">Malware Scanner <span>$12.00 per month</span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-malware">
+				<label for="toggle-malware" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">SSL certificate: Comodo <span>$12.00 per month</span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-ssl">
+				<label for="toggle-ssl" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">mod_security <span><a href="#">What's this?</a></span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-mod">
+				<label for="toggle-mod" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">PHP Auto-upgrade <span><a href="#">What's this?</a></span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-php">
+				<label for="toggle-php" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+</ul>
+
+
+<h3><img src="{{site.baseurl}}/assets/images/icons/icon.security.svg" class="l-inline m-bottom-0 m-right-2 u-vertical-align-middle" alt="Security Settings" />Cloudflare Settings</h3>
+<ul class="List__settings m-top-5 m-bottom-7">
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">Enable Cloudflare on this domain <span><a href="#">What's this?</a></span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-one">
+				<label for="toggle-one" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+	<li class="ItemList__item">
+		<div class="ItemList__item-desc">Enable Cloudflare <span><a href="#">What's this?</a></span></div>
+		<div class="ItemList__item-toggle">
+			<div class="Toggle">
+				<input class="Toggle__input" type="checkbox" id="toggle-two">
+				<label for="toggle-two" class="Toggle__label">
+					<span class="Toggle__description">
+						<span class="Toggle__checked">On</span>
+						<span class="Toggle__unchecked">Off</span>
+					</span>
+					<span class="Toggle__visible"></span>
+				</label>
+			</div>
+		</div>
+	</li>
+</ul>
+
+<div class="Form__group Form__group--select w-50 m-left-0">
+	<label for="select1" class="Form__label">Cloudfare Account</label>
+	<select id="select1" class="Select">
+	<option>New Account</option>
+	</select>
+</div>
+<div class="Form__group Form__group--select w-50 m-left-0">
+	<label for="select2" class="Form__label">Cloudflare Subscription - <a htref="#">What's this?</a></label>
+	<select id="select2" class="Select">
+	<option>Basic Plan (Free!)</option>
+	</select>
+</div>
+<div class="Form__inline w-50 m-left-0">
+	<div class="Form__inline-grid">
+		<div class="Form__inline-row">
+			<div class="Form__group">
+				<label for="input1" class="Form__label">Cloudflare Email</label>
+				<input id="input1" type="text" class="Input" placeholder="your@email.com">
+			</div>
+			<div class="Form__group">
+				<label for="input2" class="Form__label">Cloudflare Username</label>
+				<input id="input2" type="text" class="Input" placeholder="">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Form__inline w-50 m-left-0 m-bottom-7">
+	<div class="Form__inline-grid">
+		<div class="Form__inline-row">
+			<div class="Form__group">
+				<label for="input3" class="Form__label">Cloudflare Password</label>
+				<input id="input3" type="text" class="Input" placeholder="">
+			</div>
+			<div class="Form__group">
+				<label for="input4" class="Form__label">Confirm Password</label>
+				<input id="input4" type="text" class="Input" placeholder="">
+			</div>
+		</div>
+	</div>
+</div>
