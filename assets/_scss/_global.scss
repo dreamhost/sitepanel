@@ -42,7 +42,7 @@ body {
 		left:0;
 		background:$c-b300;
 		height:4px;
-		width:100%; 
+		width:100%;
 	}
 }
 
@@ -52,7 +52,7 @@ body {
 		margin:0 1% 0 0;
 		background:$c-g200;
 		height:4px;
-		width:24%; 
+		width:24%;
 
 		&:first-child, &:nth-child(2){
 			background:$c-b300;
@@ -169,7 +169,7 @@ body {
 // Tabs hr should match global hr
 // Also make tabs scroll on overflow
 .Tabs {
-	overflow: scroll;
+	overflow-y: hidden;
 	cursor: e-resize;
 
 	ul {
@@ -216,4 +216,69 @@ body {
 hr {
 	border: 0;
 	border-bottom: 1px solid $c-g200;
+}
+
+// Various typographical tweaks
+// Please lets discuss!
+
+// Bump table cell font up to 16px
+.Table tbody tr td,
+.Table__m tbody tr td,
+.Table tbody tr td:first-child a,
+.Table__m tbody tr td:first-child a {
+	font-size: 16px;
+}
+
+// Bump button font up to 13px
+.Button:not(.Button--text):not(.Toaster__close):not(.Button--compact):not(.t-caret) {
+	font-size: 12px;
+	padding: 1em 3em .9em;
+}
+
+// Bump product menu bottom margin up slightly
+.List__menu--title {
+	margin-bottom: .5em;
+}
+
+// Position tags slightly higher for middle alignment
+.Tag,
+.Table--dashboard .Tag {
+	top: -.1em;
+	position: relative;
+	font-weight: 600;
+	width: auto;
+}
+
+// Reduce width of table data-lables
+.Table__m tbody tr td:before {
+	width: 100px;
+
+	@media (min-width: 750px) {
+		width: auto;
+	}
+}
+
+// Bump tab fonts up to 15px
+.Tabs__nav-item {
+	font-size: 15px;
+}
+
+// Reduce superscript fonts to 13px
+.Card__super {
+	font-size: 13px;
+}
+
+// Increase padding on code elements
+code {
+	padding: .3rem .6rem;
+}
+
+// Give toasters the light gray treatment
+.Toaster {
+	background: $c-g100;
+}
+
+// Bump page header links up to 15px
+.PageHeader__nav-link {
+	font-size: 15px;
 }

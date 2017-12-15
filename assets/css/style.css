@@ -43,23 +43,21 @@ body { min-height: 100%; }
 
 .Card__wrapper .Card__content { flex: 1 0 auto; }
 
-.Tabs__nav-item { padding: 0; }
-
-.Tabs__nav-item a { display: block; color: #677983; padding: 0 0 1em 0; }
-
 .Card { background: #F4F6F9; width: 100%; }
 
 @media (min-width: 750px) { .Card { background: none; }
   .Card.g-1_3, .Card.g-1_3__m, .Card.g-1_3__l { width: 31.76157%; }
   .Card.g-1_2, .Card.g-1_2__m, .Card.g-1_2__l { width: 48.82117%; } }
 
-.Tabs__nav-item a { color: #677983; }
+.Tabs__nav-item { padding: 0; }
+
+.Tabs__nav-item a { display: block; color: #677983; padding: 0 0 1em 0; }
 
 .Tabs__nav-item a:hover { text-decoration: none; color: #071c26; }
 
 .Tabs__nav-item.is-active a { color: #071c26; }
 
-.Tabs { overflow: scroll; cursor: e-resize; }
+.Tabs { overflow-y: hidden; cursor: e-resize; }
 
 .Tabs ul { border-bottom: 1px solid #E0E4E8; min-width: 450px; }
 
@@ -73,6 +71,28 @@ body { min-height: 100%; }
 .Button--text { font-size: 14px; }
 
 hr { border: 0; border-bottom: 1px solid #E0E4E8; }
+
+.Table tbody tr td, .Table__m tbody tr td, .Table tbody tr td:first-child a, .Table__m tbody tr td:first-child a { font-size: 16px; }
+
+.Button:not(.Button--text):not(.Toaster__close):not(.Button--compact):not(.t-caret) { font-size: 12px; padding: 1em 3em .9em; }
+
+.List__menu--title { margin-bottom: .5em; }
+
+.Tag, .Table--dashboard .Tag { top: -.1em; position: relative; font-weight: 600; width: auto; }
+
+.Table__m tbody tr td:before { width: 100px; }
+
+@media (min-width: 750px) { .Table__m tbody tr td:before { width: auto; } }
+
+.Tabs__nav-item { font-size: 15px; }
+
+.Card__super { font-size: 13px; }
+
+code { padding: .3rem .6rem; }
+
+.Toaster { background: #F4F6F9; }
+
+.PageHeader__nav-link { font-size: 15px; }
 
 .PageHeader { padding: 1.75rem 0; }
 
@@ -118,11 +138,13 @@ hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 @media (min-width: 1050px) { .everything-else.Popover { right: 0; width: 600px; }
   .everything-else.Popover li { width: calc(50% - .2rem); } }
 
-.everything-else + .Button { padding: 1em 2.5em 1em 3em; }
+.everything-else + .Button { padding: 1em 2.5em .9em 3em; font-size: 12px; }
 
 .old-panel { color: #677983; }
 
 .Toaster-container { bottom: 0; top: auto; }
+
+.Toaster__close { padding: .4rem; }
 
 .Toaster__close g { stroke: #AFBFC9; transition: all .15s ease-in-out; }
 
@@ -130,7 +152,7 @@ hr { border: 0; border-bottom: 1px solid #E0E4E8; }
 
 .Toaster__close:hover g { stroke: #ffffff; }
 
-.Toaster--is-closing { animation: toaster-close .5s ease-in-out both; }
+.Toaster--is-closing { animation: toaster-close .5s ease-in-out both; animation-delay: 0s !important; }
 
 @keyframes toaster-close { 0% { opacity: 1;
     transform: scale(1) translateX(0);

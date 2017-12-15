@@ -1,22 +1,22 @@
 // Add left side tabs styles
 // They turn into top tabs at low widths
 @media (min-width: 750px) {
-    .Tabs--left {
-        max-width: 200px;
-        margin-top: 2rem;
+	.Tabs--left {
+		max-width: 200px;
+		margin-top: 2rem;
 
-        ul {
-            border: 0;
-        }
+		ul {
+			border: 0;
+		}
 
-        .Tabs__nav-item {
-            display: block;
-            margin: 0;
-            font-size: 16px;
+		.Tabs__nav-item {
+			display: block;
+			margin: 0;
+			font-size: 16px;
 
-            &:after {
-                display: none;
-            }
-        }
-    }
+			&:after {
+				display: none;
+			}
+		}
+	}
 }
