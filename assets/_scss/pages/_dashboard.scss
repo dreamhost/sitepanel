@@ -114,20 +114,21 @@
 
 .Toaster--is-closing {
 	animation: toaster-close .5s ease-in-out both;
+	animation-delay: 0s !important; // Gross temp fix until we can add to framework
 }
 
 @keyframes toaster-close {
 	0% {
 		opacity: 1;
-		transform: scale(1) translateX(0);
+		position: relative;
+		left: 0;
 		margin-bottom: .5em;
 		height: 100%;
 	}
-
 	100% {
 		opacity: 0;
-		transform: scale(.98) translateX(100%);
 		margin-bottom: 0;
 		height: 0;
+		left: 100%;
 	}
 }
