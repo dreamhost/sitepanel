@@ -4,30 +4,6 @@ body {
 	min-height: 100%;
 }
 
-// Keep # of alerts white
-.PageHeader__notification-amount {
-	color: $c-w100;
-}
-
-// Remove underline from subnav links
-.PageHeader__subnav a {
-	text-decoration: none;
-}
-
-// Enable small-bold lists to have text that isn't in anchor tags.
-.List--small-bold > li span {
-	color: $c-g400;
-	font-size: .875rem;
-	padding: auto 1rem;
-}
-
-// Break out this for use in Infographic card types
-.Card__super{
-	text-transform: uppercase;
-	font-size: .875rem;
-	color: $c-g400;
-}
-
 // Infographic placeholder
 .Infographic__bar{
 	display: block;
@@ -109,153 +85,10 @@ body {
 
 // Flexbox cards
 .Card__wrapper{
-	display: inline-flex;
-	flex-wrap: wrap;
 	margin:2em 0 1.5em 0;
-
-	.Card{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.Card__content{
-		flex: 1 0 auto;
-	}
-}
-
-// Grey background for low-res cards
-.Card {
-	background: $c-g100;
-	width: 100%;
-
-	@media (min-width: 750px) {
-		background: none;
-
-		&.g-1_3,
-		&.g-1_3__m,
-		&.g-1_3__l {
-			width: 31.76157%;
-		}
-
-		&.g-1_2,
-		&.g-1_2__m,
-		&.g-1_2__l {
-			width: 48.82117%;
-		}
-	}
-}
-
-// Make Tabs support anchors
-.Tabs__nav-item {
-	padding:0;
-
-	a {
-		display: block;
-		color: $c-g400;
-		padding:0 0 1em 0;
-
-		&:hover {
-			text-decoration: none;
-			color: $c-b700;
-		}
-	}
-
-	&.is-active a {
-		color: $c-b700;
-	}
-}
-
-// Tabs hr should match global hr
-// Also make tabs scroll on overflow
-.Tabs {
-	overflow-y: hidden;
-	cursor: e-resize;
-
-	ul {
-		border-bottom: 1px solid $c-g200;
-		min-width: 450px;
-	}
-
-	&:after {
-		width: 0;
-		height: 0;
-		border-top: 7px solid transparent;
-		border-bottom: 7px solid transparent;
-		border-left: 10px solid $c-g100;
-		display: block;
-		position: absolute;
-		content: '';
-		top: 14.6rem;
-		color: $c-g300;
-		right: 2rem;
-	}
-
-	&:hover:after {
-		border-left: 10px solid $c-g200;
-	}
-
-	@media (min-width: 500px) {
-		overflow-y: auto;
-		cursor: default;
-
-		&:before,
-		&:after {
-			display: none;
-		}
-	}
-}
-
-// Button--text fonts are too small right now to be usable/accessible.
-// This bumps them from 11px to 14px.
-.Button--text {
-	font-size: 14px;
-}
-
-// HR should be 1px border, not 2px
-hr {
-	border: 0;
-	border-bottom: 1px solid $c-g200;
 }
 
 // Various typographical tweaks
-// Please lets discuss!
-
-// Bump table cell font up to 16px
-.Table tbody tr td,
-.Table__m tbody tr td,
-.Table tbody tr td:first-child a,
-.Table__m tbody tr td:first-child a {
-	font-size: 16px;
-}
-
-// Bump button font up to 13px
-.Button:not(.Button--text):not(.Toaster__close):not(.Button--compact):not(.t-caret) {
-	font-size: 12px;
-	padding: 1em 3em .9em;
-}
-
-// Bump product menu bottom margin up slightly
-.List__menu--title {
-	margin-bottom: .5em;
-}
-
-// Position tags slightly higher for middle alignment
-.Tag,
-.Table--dashboard .Tag {
-	top: -.1em;
-	position: relative;
-	font-weight: 600;
-	width: auto;
-}
-
-// Reduce width of table data-lables
-.Table__m tbody tr td:before {
-	width: 100px;
-
-	@media (min-width: 750px) {
-		width: auto;
-	}
-}
 
 // Bump tab fonts up to 15px
 .Tabs__nav-item {
@@ -265,16 +98,6 @@ hr {
 // Reduce superscript fonts to 13px
 .Card__super {
 	font-size: 13px;
-}
-
-// Increase padding on code elements
-code {
-	padding: .3rem .6rem;
-}
-
-// Give toasters the light gray treatment
-.Toaster {
-	background: $c-g100;
 }
 
 // Bump page header links up to 15px

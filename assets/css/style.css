@@ -9,14 +9,6 @@ SitePanel CSS
 */
 body { min-height: 100%; }
 
-.PageHeader__notification-amount { color: #ffffff; }
-
-.PageHeader__subnav a { text-decoration: none; }
-
-.List--small-bold > li span { color: #677983; font-size: .875rem; padding: auto 1rem; }
-
-.Card__super { text-transform: uppercase; font-size: .875rem; color: #677983; }
-
 .Infographic__bar { display: block; background: #F4F6F9; height: 4px; width: 100%; position: relative; }
 
 .Infographic__bar span { position: absolute; top: 0; left: 0; background: #2BADE9; height: 4px; width: 100%; }
@@ -37,60 +29,11 @@ body { min-height: 100%; }
 
 .Infographic__radial span { background: #ffffff; height: 100px; width: 100px; display: block; border-radius: 500px; position: absolute; top: 50%; left: 50%; margin: -50px 0 0 -50px; }
 
-.Card__wrapper { display: inline-flex; flex-wrap: wrap; margin: 2em 0 1.5em 0; }
-
-.Card__wrapper .Card { display: flex; flex-direction: column; }
-
-.Card__wrapper .Card__content { flex: 1 0 auto; }
-
-.Card { background: #F4F6F9; width: 100%; }
-
-@media (min-width: 750px) { .Card { background: none; }
-  .Card.g-1_3, .Card.g-1_3__m, .Card.g-1_3__l { width: 31.76157%; }
-  .Card.g-1_2, .Card.g-1_2__m, .Card.g-1_2__l { width: 48.82117%; } }
-
-.Tabs__nav-item { padding: 0; }
-
-.Tabs__nav-item a { display: block; color: #677983; padding: 0 0 1em 0; }
-
-.Tabs__nav-item a:hover { text-decoration: none; color: #071c26; }
-
-.Tabs__nav-item.is-active a { color: #071c26; }
-
-.Tabs { overflow-y: hidden; cursor: e-resize; }
-
-.Tabs ul { border-bottom: 1px solid #E0E4E8; min-width: 450px; }
-
-.Tabs:after { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #F4F6F9; display: block; position: absolute; content: ''; top: 14.6rem; color: #AFBFC9; right: 2rem; }
-
-.Tabs:hover:after { border-left: 10px solid #E0E4E8; }
-
-@media (min-width: 500px) { .Tabs { overflow-y: auto; cursor: default; }
-  .Tabs:before, .Tabs:after { display: none; } }
-
-.Button--text { font-size: 14px; }
-
-hr { border: 0; border-bottom: 1px solid #E0E4E8; }
-
-.Table tbody tr td, .Table__m tbody tr td, .Table tbody tr td:first-child a, .Table__m tbody tr td:first-child a { font-size: 16px; }
-
-.Button:not(.Button--text):not(.Toaster__close):not(.Button--compact):not(.t-caret) { font-size: 12px; padding: 1em 3em .9em; }
-
-.List__menu--title { margin-bottom: .5em; }
-
-.Tag, .Table--dashboard .Tag { top: -.1em; position: relative; font-weight: 600; width: auto; }
-
-.Table__m tbody tr td:before { width: 100px; }
-
-@media (min-width: 750px) { .Table__m tbody tr td:before { width: auto; } }
+.Card__wrapper { margin: 2em 0 1.5em 0; }
 
 .Tabs__nav-item { font-size: 15px; }
 
 .Card__super { font-size: 13px; }
-
-code { padding: .3rem .6rem; }
-
-.Toaster { background: #F4F6F9; }
 
 .PageHeader__nav-link { font-size: 15px; }
 
