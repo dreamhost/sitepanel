@@ -1,10 +1,8 @@
 // Dashboard table tweaks
-.Table--dashboard {
-	.Table__row,
-	.Table__row:last-child {
-		border-color: $c-g200;
-	}
 
+// __link--active class makes links in tables black.
+// Sub is used for sub-domains. Subs are gray.
+.Table--dashboard {
 	.Table__link--active {
 		color: $c-black;
 
@@ -17,20 +15,10 @@
 			color: $c-g400;
 		}
 	}
-
-	.Tag {
-		text-decoration: none;
-	}
 }
 
-.Table__row .Button,
-	.Table__row--parent .Button,
-	.Table__row--child .Button {
-		font-size: .688rem; // REMOVE ME! Temp fix for framework rem/em bug
-		padding: .65em 1.7em;
-	}
-
-// Dashboard button tweaks
+// Dashboard buttons: Give the "add" buttons a responsive
+// container. Tweak hover and caret colors for UI consistency.
 .dashboard-buttons {
 	padding: 0 0 3rem;
 	margin-top: -1rem;
@@ -45,7 +33,6 @@
 	}
 
 	.t-caret:after {
-		margin-left: .5rem;
 		color: $c-g300;
 	}
 
@@ -53,15 +40,11 @@
 	.t-caret.is-open:after {
 		color: $c-b300;
 	}
-
-	.List__menu--title {
-		font-weight: 600;
-	}
 }
 
+// Make the "everything else" popover responsive.
 .everything-else.Popover {
 	right: auto;
-
 	width: 250px;
 
 	li {
@@ -78,56 +61,18 @@
 	}
 }
 
+// Adjust padding to compensate for caret.
 .everything-else + .Button {
 	padding: 1em 2.5em .9em 3em;
-	font-size: 12px;
 }
 
-// Dashboard original control panel link (TEMP)
-.old-panel {
-	color: $c-g400;
-}
-
-// Dashboard toaster tweaks
+// Dashboard toaster at the bottom instead of top
 .Toaster-container {
 	bottom: 0;
 	top: auto;
 }
 
-.Toaster__close {
-	padding: .4rem;
-
-	g {
-		stroke: $c-g300;
-		transition: all .15s ease-in-out;
-	}
-
-	&:hover {
-		background: $c-r300;
-		border-color: $c-r300;
-	}
-
-	&:hover g {
-		stroke: $c-w100;
-	}
-}
-
-.Toaster--is-closing {
-	animation: toaster-close .5s ease-in-out both;
-	animation-delay: 0s !important; // Gross temp fix until we can add to framework
-}
-
-@keyframes toaster-close {
-	0% {
-		opacity: 1;
-		transform: scale(1) translateX(0);
-		margin-bottom: .5em;
-		height: 100%;
-	}
-	100% {
-		opacity: 0;
-		transform: scale(.98) translateX(100%);
-		margin-bottom: 0;
-		height: 0;
-	}
+// Dashboard original control panel link (TEMP)
+.old-panel {
+	color: $c-g400;
 }
